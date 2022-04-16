@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>The Mobile Store</title>
+	</head>
+	<body>
+		<header><h1 style="text-align: center;">The Mobile Store</h1></header>
+
+		<div style="display: flex;  justify-content: space-around; margin-bottom: 55px;">
+			<div>
+				<label for="cars">Sort By: </label>
+	
+				<select name="sort" id="sort">
+					<option value="" selected disabled>Sort Mobiles</option>
+					<option value="price_high_to_low">Price: High to Low</option>
+					<option value="price_low_to_high">Price: Low to High</option>
+					<option value="ratings_high_to_low">Rating: High to Low</option>
+					<option value="ratings_low_to_high">Rating: Low to High</option>
+				</select>
+			</div>
+	
+			<div>My Cart <span id="cart_num"></span>
+			<p><a href="./checkout.html">Go to CheckOut</a></p>
+			</div>
+
+		</div>
+
+		<div id="products_list" style="display: flex; justify-content: space-around; flex-wrap: wrap"></div>
+
+		<script src="./mobileStore.js"></script>
+	</body>
+</html>
